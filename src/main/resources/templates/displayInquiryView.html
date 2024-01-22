@@ -16,7 +16,7 @@
                 <td><label>
                     <select th:field="*{classMode}">
                         <option value="">Select</option>
-                        <option value="Offline">Online</option>
+                        <option value="Online">Online</option>
                         <option value="Both">Classroom</option>
                     </select>
                 </label>
@@ -42,9 +42,7 @@
                 </select>
             </label>
             </td>
-        </tr>
-        <tr>
-        <td><input type="submit" value="Search" class="btn btn-primary"/></td>
+        <td ><input type="submit" value="Search" class="btn btn-primary"/></td>
         </tr>
     </table>
     </form>
@@ -54,8 +52,8 @@
     <tr>
         <th>Name</th>
         <th>Phone</th>
-        <th>Class Mode</th>
         <th>Course Name</th>
+        <th>Class Mode</th>
         <th>Status</th>
     </tr>
     </thead>
@@ -64,8 +62,8 @@
     <tr th:each="inq : ${inquiries}">
          <td th:text="${inq.name}"></td>
         <td th:text="${inq.phone}"></td>
-        <td th:text="${inq.classMode}"></td>
         <td th:text="${inq.courseName}"></td>
+        <td th:text="${inq.classMode}"></td>
         <td th:text="${inq.inquiryStatus}"></td>
     </tr>
     </tbody>

@@ -59,7 +59,7 @@ public class CounsellorController {
     @GetMapping("/dashboard")
     public String buildDashBoard(HttpServletRequest req, Model model) {
        HttpSession session = req.getSession(false);
-       Object obj = session.getAttribute("cid");
+       Object obj = session.getAttribute("CID");
        Integer cid = (Integer) obj;
    DashboardResponse dashboardInformation = counsellorService.getDashboardInfo(cid);
    model.addAttribute("dashboard", dashboardInformation);

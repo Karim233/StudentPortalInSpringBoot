@@ -52,10 +52,10 @@ public class InquiryController {
         return "addInquiryView";
     }
 
-    @GetMapping("/viewInquiry")
-    public String viewInquiry(Model model) {
-        return "displayInquiryView";
-    }
+//    @GetMapping("/viewInquiry")
+//    public String viewInquiry(Model model) {
+//        return "displayInquiryView";
+//    }
     @GetMapping("/inquiries")
     public String viewEnquiries(HttpServletRequest req, Model model) {
 

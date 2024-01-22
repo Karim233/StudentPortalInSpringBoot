@@ -32,19 +32,18 @@
             </tr>
             <tr>
                 <td> Class Mode : </td>
-                <td><label>
-                    <select th:field="*{classMode}">
-                        <option value="">Select</option>
-                        <option value="Offline">Online</option>
-                        <option value="Both">Classroom</option>
-                        </select>
-                </label>
+
+                <td><label for="classMode"></label><select th:field="*{classMode}" id="classMode" class="form-select">
+                    <option value="">-Select-</option>
+                    <option value="online">Online</option>
+                    <option value="classroom">Classroom</option>
+                </select>
                 </td>
+
             </tr>
             <tr>
                 <td> Course Name : </td>
-                <td><label>
-                    <select th:field="*{courseName}" >
+                    <td><label for="courseName"></label><select th:field="*{courseName}" id="courseName" class="form-select">
                         <option value="">Select</option>
                         <option value="JAVA">Java</option>
                         <option value="PYTHON">Python</option>
@@ -54,19 +53,16 @@
                         <option value="UI">UI</option>
                         <option value="OTHERS">Others</option>
                     </select>
-                </label>
                 </td>
             </tr>
             <tr>
                 <td> Status : </td>
-                <td><label>
-                    <select th:field="*{inquiryStatus}">
-                        <option value="">Select</option>
-                        <option value="New">New</option>
-                        <option value="Enrolled">Enrolled</option>
-                        <option value="Lost">Lost</option>
-                    </select>
-                </label>
+                <td><label for="enqStatus"></label><select th:field="*{inquiryStatus}" id="enqStatus" class="form-select">
+                    <option value="">-Select-</option>
+                    <option value="new">New</option>
+                    <option value="enrolled">Enrolled</option>
+                    <option value="lost">Lost</option>
+                </select>
                 </td>
             </tr>
             <tr>
