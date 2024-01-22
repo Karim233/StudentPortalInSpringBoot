@@ -1,32 +1,34 @@
 package com.example.schoolportalusingspring.binding;
 
-public class SearchInquiry {
-    private String name;
-    private String status;
-    private String courseMode;
+public class SearchCriteria {
+    private String CourseName;
 
-    public String getName() {
-        return name;
+    private String ClassMode;
+
+    private String inquiryStatus;
+
+
+
+    public String getInquiryStatus() {
+        return inquiryStatus;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setInquiryStatus(String inquiryStatus) {
+        this.inquiryStatus = inquiryStatus;
+    }
+    public String getCourseName() {
+        return CourseName;
+    }
+    public void setCourseName(String courseName) {
+        CourseName = courseName;
     }
 
-    public String getStatus() {
-        return status;
+    public String getClassMode() {
+        return ClassMode;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public String getCourseMode() {
-        return courseMode;
-    }
-
-    public void setCourseMode(String courseMode) {
-        this.courseMode = courseMode;
+    public void setClassMode(String classMode) {
+        ClassMode = classMode;
     }
 }
 

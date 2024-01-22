@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 
 
 @Entity
-public class Cousellor {
+public class Counsellor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer cid;
